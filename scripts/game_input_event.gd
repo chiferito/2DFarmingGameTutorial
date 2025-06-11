@@ -18,3 +18,6 @@ static func movement_input() -> Vector2:
 
 static func is_movement_input() -> bool:
 	return false if movement_input()==Vector2.ZERO else true;
+
+static func use_tool() -> bool:
+	return Input.is_action_just_pressed("hit")
